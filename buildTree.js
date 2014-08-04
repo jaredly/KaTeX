@@ -503,14 +503,14 @@ var makeText = function(value, style, mode) {
 };
 
 var mathit = function(value, mode) {
-    return makeSpan(["mathit"], [makeText(value, "math-italic", mode)]);
+    return makeSpan(["mathit"], [makeText(value, "Math-Italic", mode)]);
 };
 
 var mathrm = function(value, mode) {
     if (symbols[mode][value].font === "main") {
-        return makeText(value, "main-regular", mode);
+        return makeText(value, "Main-Regular", mode);
     } else {
-        return makeSpan(["amsrm"], [makeText(value, "ams-regular", mode)]);
+        return makeSpan(["amsrm"], [makeText(value, "AMS-Regular", mode)]);
     }
 };
 

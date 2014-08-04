@@ -39,8 +39,8 @@ end
 font_dir = File.join(File.dirname(__FILE__), 'static/fonts/')
 metrics = {}
 
-%w[main-regular math-italic ams-regular].each do |face|
-  metrics[face] = metrics_for_file(File.join(font_dir, 'katex_%s.ttf' % face))
+%w[Main-Regular Math-Italic AMS-Regular].each do |face|
+  metrics[face] = metrics_for_file(File.join(font_dir, 'KaTeX_%s.ttf' % face))
 end
 
 puts "var metricMap = %s;" % metrics.to_json
