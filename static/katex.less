@@ -190,7 +190,7 @@ big parens
         }
 
         .fix-ie {
-            display: inline-block;
+            display: inline-table;
         }
     }
 
@@ -211,10 +211,10 @@ big parens
         }
 
         .fix-ie {
-            display: inline-block;
+            display: inline-table;
         }
 
-        .mfracmid > span {
+        .mfracmid > .line {
             width: 100%;
 
             &:before {
@@ -324,10 +324,10 @@ big parens
         }
 
         > .fix-ie {
-            display: inline-block;
+            display: inline-table;
         }
 
-        > .overline-line > span {
+        > .overline-line > .line {
             width: 100%;
 
             &:before {
@@ -347,7 +347,7 @@ big parens
         }
     }
 
-    .sizing {
+    .sizing, .fontsize-ensurer {
         display: inline-block;
 
         @size1: 0.5;
@@ -403,6 +403,10 @@ big parens
                         font-family: KaTeX_Size1;
                     }
                 }
+            }
+
+            > .fix-ie {
+                display: inline-block;
             }
         }
     }
