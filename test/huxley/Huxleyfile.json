@@ -105,5 +105,11 @@
         "name": "Overline",
         "screenSize": [1024, 768],
         "url": "http://localhost:7936/test/huxley/test.html?m=\\overline{x}\\overline{x}\\overline{x^{x^{x^x}}} \\blue\\overline{y}"
+    },
+
+    {
+        "name": "DeepFontSizing",
+        "screenSize": [1024, 768],
+        "url": "http://localhost:7936/test/huxley/test.html?m=a^{\\big| x^{\\big(}}_{\\Bigl\\uparrow} + \\dfrac{\\Huge x}{y} + a^{\\Huge x} - b_{\\Huge y} + c^{\\Huge x}_{\\Huge y}"
     }
 ]

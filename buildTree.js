@@ -501,7 +501,7 @@ var groupTypes = {
         };
 
         var fontSize = sizeToFontSize[group.value.size];
-        span.maxFontSize = fontSize;
+        span.maxFontSize = fontSize * options.style.sizeMultiplier;
 
         return span;
     },
